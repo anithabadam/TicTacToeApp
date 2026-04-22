@@ -1,0 +1,26 @@
+public class UC2 {
+       public static void main(String[]args){
+         Random rand = new Random();
+        int toss = rand.nextInt(2);
+
+        String firstPlayer;
+        char firstSymbol;
+        char secondSymbol;
+
+        if (toss == 0) {
+            firstPlayer = "Player 1";
+            firstSymbol = 'X';
+            secondSymbol = 'O';
+        } else {
+            firstPlayer = "Player 2";
+            firstSymbol = 'O';
+            secondSymbol = 'X';
+        }
+
+        System.out.println("Toss result:");
+        System.out.println(firstPlayer + " will start the game.");
+        System.out.println(firstPlayer + " gets symbol): " + firstSymbol);
+        System.out.println("The other player gets symbol: " + secondSymbol);
+       }
+       
+    }
